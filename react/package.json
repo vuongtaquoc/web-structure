@@ -4,7 +4,7 @@
   "description": "Get started with ES2015, React and Redux. Including Webpack, ESLint, react-router, fetch ...",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
-    "build": "rm -rf dist && webpack --config webpack/webpack.config.prod.js  && cp -a assets/ dist/",
+    "build": "rimraf dist && webpack --config webpack/webpack.config.prod.js  && cp -a assets/ dist/",
     "prod": "serve ./dist -s",
     "lint": "eslint src",
     "ngrok": "ngrok http -region eu 8080",
@@ -32,6 +32,7 @@
     "preload-webpack-plugin": "1.2.2",
     "prettier": "1.5.2",
     "react-test-renderer": "16.0.0",
+    "rimraf": "2.6.3",
     "serve": "6.0.2",
     "webpack": "3.1.0",
     "webpack-dev-server": "2.5.1"
